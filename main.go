@@ -35,8 +35,8 @@ func stringCombinationSearcher(index int, currentExpression string, currentSum i
 		if index == 0 {
 			stringCombinationSearcher(i, currentNumStr, currentNum)
 		} else {
-			stringCombinationSearcher(i, currentExpression+" + "+currentNumStr, currentSum+currentNum)
-			stringCombinationSearcher(i, currentExpression+" - "+currentNumStr, currentSum-currentNum)
+			stringCombinationSearcher(i, currentExpression+"+"+currentNumStr, currentSum+currentNum)
+			stringCombinationSearcher(i, currentExpression+"-"+currentNumStr, currentSum-currentNum)
 		}
 	}
 }
